@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test9</title>
+	<script src="jquery/jquery-3.2.1.slim.min.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var name = $('#name');
+			var pswd1 = $('#pswd1');
+			var pswd2 = $('#pswd2');
+			name.focus();
+			name.blur(function(){
+				if(name.val() == ''){
+					name.val('用户名不能为空');
+				}
+			})
+			name.click(function(){
+				if(name.val() == '用户名不能为空')
+					name.val("");
+			})
+			pswd1.blur(function(){
+				if(pswd1.val() == ""){
+					pswd1.attr('type','text');
+					pswd1.val("密码不能为空");					
+				}
+			})
+			pswd1.click(function(){
+				if(pswd1.val() == '密码不能为空'){
+					pswd1.attr('type','password');
+					pswd1.val("");
+				}
+			})
+			pswd2.blur(function(){
+				if(pswd2.val() == ""){
+					pswd2.attr('type','text');
+					pswd2.val("密码不能为空");					
+				}
+			})
+			pswd2.click(function(){
+				if(pswd2.val() == '密码不能为空'){
+					pswd1.attr('type','password');
+					pswd2.val("");
+				}
+			})
+		})
+	</script>
+	<style type="text/css">
+		table{
+			border: 1px red solid;
+			width: 500px;
+			height: 150px;
+		}
+		td{
+			border: 1px red solid;
+			text-align: center;
+		}
+		span{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<table cellspacing="0" cellpadding="0">
+		<tr>
+			<td>用户名：</td>
+			<td><input type="text" name="username" id="name" value=""></td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+			<td><input type="password" name="" id="pswd1" value=""></td>
+		</tr>
+		<tr>
+			<td>确认密码：</td>
+			<td><input type="password" name="" id="pswd2" value=""></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="button" name="zc" value="注册" id="btn"></td>
+		</tr>
+	</table>
+</body>
+</html>

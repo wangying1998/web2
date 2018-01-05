@@ -1,0 +1,28 @@
+table{
+	border: 1px gray solid;
+	width: 350px;
+	height: 450px;
+	text-align: center;
+}
+td{
+	border: 1px gray solid;
+}
+input{
+	height: 60px;
+	width: 60px;
+	font-family: "宋体";
+	font-size: 18px;
+}
+#result{
+	font-weight: bold;
+	font-size: 30px;
+	text-align: right;
+	width: 180px;
+	text-align: right;
+	margin-right: 10px;
+	border: white;
+}
+.ge{
+	text-align: right;
+	padding: 0;
+}

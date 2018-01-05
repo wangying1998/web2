@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lab3</title>
+	<link rel="stylesheet" type="text/css" href="lab3.css">
+</head>
+<body>
+	<div id="all">
+		<div id="text">
+			宝贝与描述相符(打分匿名)
+		</div>
+		<div id="star">
+			<img src="images/star0.png" alt="" onmouseover="fun(0)" onmouseout="hide()" onclick="qd(fun)">
+			<img src="images/star0.png" alt="" onmouseover="fun(1)" onmouseout="hide()" onclick="qd(fun)">
+			<img src="images/star0.png" alt="" onmouseover="fun(2)" onmouseout="hide()" onclick="qd(fun)">
+			<img src="images/star0.png" alt="" onmouseover="fun(3)" onmouseout="hide()" onclick="qd(fun)">
+			<img src="images/star0.png" alt="" onmouseover="fun(4)" onmouseout="hide()" onclick="qd(fun)">
+		</div>
+		<div id="content">
+			<textarea id="txt">评论内容...</textarea>
+			<select>
+				<option>公开评论</option>
+			</select>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var arr = ["差","凑合","好","很好","非常好"];
+	var div = document.getElementsByTagName('img');
+	var txt = document.getElementById("txt");
+	var con = false;
+	var i;
+	function fun(i){
+		for(var m=div.length-1;m>i;m--)
+		{
+			div[m].src = "images/star0.png";
+		}	
+		for(var n=0;n<=i;n++)
+		{
+			if(n<2)
+			{
+				div[n].src = "images/star1.png";
+				txt.value = arr[n];
+			}
+			else
+			{
+				div[0].src = "images/star2.png";
+				div[1].src = "images/star2.png";
+				div[n].src = "images/star2.png";
+				txt.value = arr[n];
+			}
+		}
+	}
+	function hide(){
+		if(con == true)
+			return con;
+		else
+			for(var n=0;n<div.length;n++)
+			{
+				div[n].src = "images/star0.png";
+				txt.value = null;
+			}
+	}
+	function qd(fun){
+		fun(i);
+		con = true;
+	}
+</script>	

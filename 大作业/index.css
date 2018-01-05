@@ -1,0 +1,170 @@
+*{
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+#head{
+	background-color: #6b8373;
+	width: 100%;
+	height: 100px;
+}
+#logo{
+	position: absolute;
+	left: 100px;
+	top: 20px;
+}
+
+#head{ 
+	height:100px;
+}  
+#head ul{
+	margin-left: 40%;
+	list-style:none;
+}
+#head ul li{
+	float:left;
+	line-height:100px;
+	text-align:center;
+	position:relative;
+	width: 120px;
+}
+#head ul li a{
+	text-decoration:none;
+	color:white;
+	display:block;
+}  
+#head ul li a:hover{
+	color:white; 
+	background:#637b6b;
+}  
+#head ul li ul{
+	margin-left: 0px;
+	position:absolute; 
+	display:none;
+}  
+#head ul li ul li{ 
+	float:none; 
+	line-height:45px; 
+	text-align:center;
+}  
+#head ul li ul li a{ 
+	font-size:14px;
+	background-color:#637b6b; 
+	width:100%;
+}  
+#head ul li ul li a:hover{ 
+	color: black;
+}  
+#head ul li:hover ul{ 
+	display:block;
+}  
+
+#img{
+	width: 100%;
+}
+
+#div1{
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	position: absolute;
+	text-align: center;
+}
+#div1 p{
+	font-family: "楷体";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+/*产品部分*/
+.p1{
+	font-size: 23px;
+}
+.p2{
+	color: grey;
+}
+.image1{
+	width: 230px;
+	height: 230px;
+}
+button{
+	width: 100px;
+	height: 40px;
+	background-color: white;
+	border: 1px grey solid;
+	color: grey;
+}
+.imgs{
+	width: 1000px;
+}
+#introduce{
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-image: url(images/bg1.jpg);
+}
+#name{
+	color: white;
+	font-size: 25px;
+}
+.intro{
+	color: white;
+	width: 1200px;
+	text-indent: 2em;
+	text-align: left;
+}
+#btn{
+	border-color: white;
+	background-color: #ddd;
+}
+#content{
+	width: 1200px;
+}
+#con{
+	width: 43%;
+	height: 350px;
+	float: left;
+}
+#con img{
+	width: 100%;
+}
+#con1{
+	float: left;
+	width: 53%;
+	height: 350px;
+	margin-left: 25px;
+}
+.lis{
+	color: grey;
+}
+.lis li{
+	height: 20px;
+	margin-top: 20px;
+	text-align: left;
+}
+a.link{
+	font-size: 14px;
+}
+a.link:link{
+	color: grey;
+	text-decoration: none;
+}
+a.link:hover{
+	text-decoration: underline;
+}
+a.link:visited{
+	color: grey;
+}
+span{
+	float: right;
+}
+#final1{
+	color: grey;
+}
+#final{
+	width: 100%;
+	height: 180px;
+}

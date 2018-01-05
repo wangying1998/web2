@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+}
+#all{
+	width: 500px;
+}
+#text{
+	background-image:url(images/bg.png); 
+	background-repeat: repeat-x;;
+	height: 25px;
+	padding-left: 15px;
+	padding-top: 6px;
+	font-size: 15px;
+	font-family: "黑体";
+}
+#star{
+	height: 25px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+#txt{
+	height: 150px;
+	width: 495px;
+	border: 1px grey solid;
+}
+select{
+	float: right;
+}
